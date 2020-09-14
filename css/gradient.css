@@ -1,0 +1,27 @@
+section#about.resume-section {
+    background: linear-gradient(45deg, #2f853a, #356b90, #354d90, #462466, #7a1f2c, #c86d17);
+    background-size: 800% 800%;
+    min-width: 100%;
+    -webkit-animation: gradientAnimation 8s ease infinite;
+    -moz-animation: gradientAnimation 8s ease infinite;
+    animation: gradientAnimation 8s ease infinite;
+  
+  }
+  
+  
+  @-webkit-keyframes gradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+  }
+  @-moz-keyframes gradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+  }
+  @keyframes gradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+  }
+  
