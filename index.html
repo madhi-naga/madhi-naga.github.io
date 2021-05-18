@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -9,22 +10,43 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+            type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/portfolio.css" rel="stylesheet" />
         <link href="css/gradient.css" rel="stylesheet" />
     </head>
+
     <body id="page-top">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var txt = "Hey 👋 I'm a software developer striving to learn new things and to improve my skills.";
+                var typetext = document.getElementById('type-text');
+
+                var typewriter = new Typewriter(typetext, {
+                    loop: false,
+                    delay: 50
+                });
+
+                typewriter.typeString(txt)
+                    .start();
+            });
+        </script>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Madhi Nagarajan</span>
-                <span class="d-none d-lg-block"><img class="portfolio-img img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+                <span class="d-none d-lg-block"><img class="portfolio-img img-profile rounded-circle mx-auto mb-2"
+                        src="assets/img/profile.jpg" alt="" /></span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
@@ -44,16 +66,24 @@
                         Madhi
                         <span class="text-primary">Nagarajan</span>
                     </h1>
-                    <div class="subheading mb-5">
+                    <div class="subheading mb-4">
                         3rd Year Software Engineering Student at McMaster University
-                        <!-- <a href="nagarajm@mcmaster.ca">nagarajm@mcmaster.ca</a> -->
                     </div>
-                    <p class="lead mb-5">Hey 👋 I'm a software developer striving to learn new things and to improve my skills.</p>
+                    <div class="subheading mb-5">
+                        Currently a Backend Developer Intern @ 
+                        <a class="company-link" target="_blank" href="https://www.intactfc.com/">Intact Financial</a>
+                    </div>
+                    <p class="lead mb-5" id="type-text"></p>
+                    <p class="lead mb-5"> </p>
                     <div class="social-icons">
-                        <a target="_blank" class="social-icon" href="https://www.linkedin.com/in/madhi-naga/"><i class="fab fa-linkedin-in"></i></a>
-                        <a target="_blank"  class="social-icon" href="https://github.com/madhi-naga/"><i class="fab fa-github"></i></a>
-                        <a target="_blank" class="social-icon" href="mailto:nagarajm@mcmaster.com"><i class="fas fa-envelope-square"></i></a>
-                        <a target="_blank" class="social-icon" href="/assets/resume/resume.pdf"><i class="far fa-file-alt"></i></a>
+                        <a target="_blank" class="social-icon" href="https://www.linkedin.com/in/madhi-naga/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a target="_blank" class="social-icon" href="https://github.com/madhi-naga/"><i
+                                class="fab fa-github"></i></a>
+                        <a target="_blank" class="social-icon" href="mailto:nagarajm@mcmaster.com"><i
+                                class="fas fa-envelope-square"></i></a>
+                        <a target="_blank" class="social-icon" href="/assets/resume/resume.pdf"><i
+                                class="far fa-file-alt"></i></a>
                     </div>
                 </div>
             </section>
@@ -61,25 +91,25 @@
             <hr class="m-0" />
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <div >
+                    <div>
                         <h2 class="mb-5">Experience</h2>
-                    </div>                    
-                    <div >
+                    </div>
+                    <div>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 mb-5">
                                 <div class="portfolio-item">
                                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                                         <div class="portfolio-hover">
-                                            
+
                                         </div>
                                         <img class="portfolio-img" src="assets/img/portfolio/netmvccode.JPG" alt="" />
                                     </a>
                                     <div class="portfolio-caption">
                                         <div class="portfolio-caption-heading">Full Stack Developer</div>
                                         <div class="portfolio-caption-subheading text-muted">Dynasoft</div>
-                                        <div class="portfolio-caption-body">As a Full Stack Developer intern, 
-                                            I utilized .NET MVC, Entity Framework,and SQL Server to create services and webpages for fleet management software. I also created and integrated key frontend UI components using tools 
-                                            like jQuery/Ajax, Kendo UI, and Google Maps API to visualize accounting, dispatch, and route data.
+                                        <div class="portfolio-caption-body">As a Full Stack Developer intern,
+                                            I utilized .NET Core, C#, and SQL to develop REST API services and dynamic webpages for a Fleet Management web application. 
+                                            In addition, I built UI dashboards using Razor webpages and Javascript to monitor transportation and financial data in real-time for clients
                                         </div>
                                     </div>
                                 </div>
@@ -88,18 +118,21 @@
                                 <div class="portfolio-item">
                                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                                         <div class="portfolio-hover">
-                                            
+
                                         </div>
-                                        <img class="portfolio-img" src="assets/img/portfolio/4308.jpg" alt="" />
+                                        <img class="portfolio-img" src="assets/img/portfolio/4308-2.jpg" alt="" />
                                     </a>
                                     <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">Software and Management Mentor</div>
-                                        <div class="portfolio-caption-subheading text-muted">Team 4308: Absolute Robotics</div>
-                                        <div class="portfolio-caption-body"> 
-                                            I coordinated a team of 60+ members to design, build, and program an industrial-sized robot.
-                                            As a mentor on the team, I also organized workshops for students relating to object-oriented development
-											in Java and managing team code through Git.
-                                            While I was the team's Vice President, we successfully reached the semi-finals in the 2018 FIRST Robotics World Championships, farthest in team's history.
+                                        <div class="portfolio-caption-heading">Software Mentor</div>
+                                        <div class="portfolio-caption-subheading text-muted">Team 4308: Absolute
+                                            Robotics</div>
+                                        <div class="portfolio-caption-body">
+                                            As a mentor on the team, I helped coordinate a team of over 60 members to design, build, and program 
+                                            a robot for FIRST Robotics competitions. I also organized workshops for students relating to
+                                            object-oriented development in Java and robot code management using Git.
+                                            While I was the team's Vice President, we successfully reached the
+                                            semi-finals in the 2018 FIRST Robotics World Championships, farthest in
+                                            team's history.
                                         </div>
                                     </div>
                                 </div>
@@ -112,85 +145,84 @@
             <hr class="m-0" />
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <div >
+                    <div>
                         <h2 class="mb-5">Projects</h2>
                     </div>
-                    <div >
+                    <div>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 mb-5">
                                 <div class="portfolio-item">
-                                    <a  class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                        <div class="portfolio-hover">
-                                            
-                                        </div>
+                                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                        <div class="portfolio-hover"></div>
                                         <img class="portfolio-img" src="assets/img/portfolio/pathify.JPG" alt="" />
                                     </a>
                                     <div class="portfolio-caption">
                                         <div class="portfolio-caption-heading">Pathify</div>
-                                        <div class="portfolio-caption-body">A React & Spring Boot web application that develops efficient & optimized route plans for transportation drivers.</div>
+                                        <div class="portfolio-caption-body">A React & Spring Boot web application that
+                                            develops efficient & optimized route plans for transportation drivers.</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-12 mb-5">
                                 <div class="portfolio-item">
-                                    <a target="_blank" class="portfolio-link" href="https://github.com/madhi-naga/Lyrio">
-                                        <div class="portfolio-hover">
-                                            
-                                        </div>
+                                    <a target="_blank" class="portfolio-link"
+                                        href="https://github.com/madhi-naga/Lyrio">
+                                        <div class="portfolio-hover"></div>
                                         <img class="portfolio-img" src="assets/img/portfolio/lyrio.png" alt="" />
                                     </a>
                                     <div class="portfolio-caption">
                                         <div class="portfolio-caption-heading">Lyrio</div>
-                                        <div class="portfolio-caption-body">A React & Node.js web application that displays and updates lyrics based on a user’s currently playing song.</div>
+                                        <div class="portfolio-caption-body">A React & Node.js web application that
+                                            displays and updates lyrics based on a user’s currently playing song.</div>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 mb-5">
                                 <div class="portfolio-item">
-                                    <a target="_blank" class="portfolio-link" href="https://devpost.com/software/tutorfy">
-                                        <div class="portfolio-hover">
-                                            
-                                        </div>
+                                    <a target="_blank" class="portfolio-link"
+                                        href="https://devpost.com/software/tutorfy">
+                                        <div class="portfolio-hover"></div>
                                         <img class="portfolio-img" src="assets/img/portfolio/tutorfy.jfif" alt="" />
                                     </a>
                                     <div class="portfolio-caption">
                                         <div class="portfolio-caption-heading">Tutorfy</div>
-                                        <div class="portfolio-caption-body">A React & Flask web application to connect students with local tutors on university campuses across Ontario. </div>
+                                        <div class="portfolio-caption-body">A React & Flask web application to connect
+                                            students with local tutors on university campuses across Ontario. </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-12 mb-5 mb-sm-0">
                                 <div class="portfolio-item">
                                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                        <div class="portfolio-hover">
-                                            
-                                        </div>
+                                        <div class="portfolio-hover"></div>
                                         <img class="portfolio-img" src="assets/img/portfolio/voicerc.png" alt="" />
                                     </a>
                                     <div class="portfolio-caption">
                                         <div class="portfolio-caption-heading">VoiceRC</div>
-                                        <div class="portfolio-caption-body">Built an Arduino-powered robot that drives based on user voice input from our Android Studio 
-                                            voice recognition app.  </div>
+                                        <div class="portfolio-caption-body">Built an Arduino-powered robot that drives
+                                            based on user voice input from our Android Studio
+                                            voice recognition app. </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
+
                         <div class="row">
                             <div class="col-lg-6 col-sm-12 mb-5 mb-lg-0">
                                 <div class="portfolio-item">
                                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
                                         <div class="portfolio-hover">
-                                            
                                         </div>
-                                        <img class="portfolio-img" src="assets/img/portfolio/filter.JPG" alt="" />
+                                        <img class="portfolio-img" src="assets/img/portfolio/filter.png" alt="" />
                                     </a>
                                     <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">filter.c</div>
-                                        <div class="portfolio-caption-body">Created a C program that processes image convolutions to image files. 
-                                            This creates a filter or blur effect on the image (eg. Gaussian Blur, Unsharp masking) depending on the kernel matrix.   
+                                        <div class="portfolio-caption-heading">Image Filter</div>
+                                        <div class="portfolio-caption-body">Created a C program that processes image
+                                            convolutions to image files.
+                                            This creates a filter or blur effect on the image (eg. Gaussian Blur,
+                                            Unsharp masking) depending on the kernel matrix.
                                         </div>
                                     </div>
                                 </div>
@@ -199,13 +231,14 @@
                                 <div class="portfolio-item">
                                     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
                                         <div class="portfolio-hover">
-                                            
+
                                         </div>
                                         <img class="portfolio-img" src="assets/img/portfolio/swing-ui.png" alt="" />
                                     </a>
                                     <div class="portfolio-caption">
                                         <div class="portfolio-caption-heading">EMS</div>
-                                        <div class="portfolio-caption-body">A Java Swing UI application that manages, stores, and sorts employee data 
+                                        <div class="portfolio-caption-body">A Java Swing UI application that manages,
+                                            stores, and sorts employee data
                                             using relational databases. </div>
                                     </div>
                                 </div>
@@ -248,32 +281,21 @@
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><img src="https://img.icons8.com/ios-filled/48/000000/c-sharp-logo.png"/></i></li>
-                        <li class="list-inline-item"></li><img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"/></li>
-                        <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                            width="48" height="48"
-                            viewBox="0 0 172 172"
-                            style=" fill:#000000;">
-                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#000000"><path d="M164.83333,143.33333l-59.78075,-104.447l-23.32392,46.97033l41.06142,47.58667l-76.20675,8.65375zM46.913,65.15217l-39.74633,67.0585l33.83383,-3.40058l59.45108,-108.46392z"></path></g></g></svg>
-                        </li>
-                        
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
                         <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
                         <li class="list-inline-item"><i class="fab fa-react"></i></li>
                         <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
                         <li class="list-inline-item"><img src="https://img.icons8.com/ios/50/000000/python.png"/></li>
-                        <li class="list-inline-item"><img src="https://img.icons8.com/ios/50/000000/php-logo.png"/></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
                         <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                        
+                        <li class="list-inline-item"><img src="https://img.icons8.com/ios-filled/48/000000/c-sharp-logo.png" /></i></li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
                     </ul>
                     <div class="subheading mb-3">Strengths</div>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Adaptable and Willingness to Learn  
+                            Adaptable and Willingness to Learn
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -355,4 +377,5 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
+
 </html>

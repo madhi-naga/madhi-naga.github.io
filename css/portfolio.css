@@ -14,14 +14,14 @@
 
 .portfolio-item img.portfolio-img { 
     border-radius: 20px 20px 0px 0px;
-    max-width: 25rem;
+    max-width: 450px;
     height: auto;
     width: 100%;
 }
 
 
 .portfolio-item {
-    max-width: 400px;
+    max-width: 450px;
     /* margin-right: 5%; */
     border-radius: 25px 25px 0px 0px ;
     /* margin-left: 10%; */
@@ -37,6 +37,14 @@
     position: relative;
     display: block;
     margin: 0 auto;
+    height: 28vh;
+}
+
+.portfolio-item .portfolio-link .portfolio-img { 
+    height: 100%;
+    width: 100% !important;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .portfolio-item .portfolio-link .portfolio-hover {
@@ -47,6 +55,7 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
+    height: 28vh;
 }
 
 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -90,6 +99,7 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
     text-align: center;
+
 }
 
 .portfolio-modal .modal-content h2 {
@@ -113,7 +123,9 @@
 
 .portfolio-modal .modal-content img {
     margin-bottom: 2rem;
+
 }
+
 
 .portfolio-modal .close-modal {
     position: absolute;
@@ -165,6 +177,17 @@
       }
   }
 
+div.subheading.mb-4 {
+    color: #eee;
+}
+
+.subheading.mb-5 a {
+    color: rgb(255, 112, 112);
+}
+.subheading.mb-5 a:hover {
+    text-decoration: none;
+    color: rgb(245, 69, 69);
+}
 
 /* @media (min-width: 576px) {
     .portfolio-item {
