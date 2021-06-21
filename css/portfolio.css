@@ -189,6 +189,15 @@ div.subheading.mb-4 {
     color: rgb(245, 69, 69);
 }
 
+.contact-links {
+    color: #175cb8
+}
+
+.contact-links:hover {
+    color: #0e4286;
+    text-decoration: none;
+}
+
 /* @media (min-width: 576px) {
     .portfolio-item {
       max-width: 540px;
